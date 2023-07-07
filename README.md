@@ -71,6 +71,12 @@ curl -s https://raw.githubusercontent.com/Bhartiya-Hacker/L3MON/master/termux_in
     4. save the file
     5. run `l3mon`
 
+# Termux Payload Builder (No JAVA 8 Required) CHEERS!
+    . To run the builder type `l3monb`
+    . Enter your Host/IP & PORT
+    . Press Enter & wait for few seconds
+    . Signed Payload can be FOUND under HOME/l3mon_output. :D
+
 9. in your browser navigate to `http://127.0.0.1:22533`
 
 ## Notes

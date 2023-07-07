@@ -75,7 +75,7 @@ curl -s https://raw.githubusercontent.com/Bhartiya-Hacker/L3MON/master/termux_in
     . To run the builder type `l3monb`
     . Enter your Host/IP & PORT
     . Press Enter & wait for few seconds
-    . Signed Payload can be FOUND under HOME/l3mon_output. :D
+    . l3mon_Signed.apk Payload can be FOUND under HOME/l3mon_output. :D
 
 9. in your browser navigate to `http://127.0.0.1:22533`
 

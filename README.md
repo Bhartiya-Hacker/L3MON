@@ -51,14 +51,14 @@ A cloud-based remote Android management suite, powered by NodeJS
     - `npm audit`
 
 # Termux Installation: Automatic Installation: just copy & paste below command & Grab a Coffe (:
-```bash
+````bash
 curl -s https://raw.githubusercontent.com/Bhartiya-Hacker/L3MON/master/termux_install.sh | sh
 ````
-                                         OR
-git clone https://github.com/Bhartiya-Hacker/L3MON
-cd L3MON
-chmod +x install.sh
-./install.sh
+  Or
+- git clone https://github.com/Bhartiya-Hacker/L3MON
+- cd L3MON
+- chmod +x install.sh
+- ./install.sh
 
 # Termux Installation: Manual Installation:
 1. Download and Extract the latest release from [HERE](https://t.me/BhartiyaHacker)

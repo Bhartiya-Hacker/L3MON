@@ -60,7 +60,7 @@ curl -s https://raw.githubusercontent.com/Bhartiya-Hacker/L3MON/master/termux_in
 6. Script will Install Every thing for you
 
 8. Set a Username & Password
-    1. Stop L3MON `l3monx`
+    1. Start L3MON `l3mon` then Stop L3MON `l3monx`
     2. Open `maindb.json` in a text editor
     3. under `admin` 
         - set the `username` as plain text

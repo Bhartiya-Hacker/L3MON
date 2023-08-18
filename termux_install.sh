@@ -63,7 +63,7 @@ echo "${GRN}  ╰━━━┻┻━━━┻╯╰━┻╯╰┻━╯╰━━
 echo "${CYN}                                  By lUCIFER   ${NC}"
 
 echo "${YLW}Setting UP Directories${NC}"
-mv -r L3MON/l3mon /$PREFIX/opt/
+mv -f L3MON/l3mon /$PREFIX/opt/
 rm -rf L3MON
 echo "${GRN}Directory SETUP Complete${NC}"
 sleep 5

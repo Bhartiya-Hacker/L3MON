@@ -75,6 +75,7 @@ curl -s https://raw.githubusercontent.com/Bhartiya-Hacker/L3MON/master/termux_in
         - set the `password` as a LOWERCASE MD5 hash (Convert your password into md5hash before pasting)
     4. save the file
     5. run `l3mon`
+    6. To login: openn your web browser & navigate to `http://127.0.0.1:22533`
 
 # Termux Payload Builder (No JAVA 8 Required) CHEERS!
     . To run the builder type `l3monb`
@@ -82,7 +83,6 @@ curl -s https://raw.githubusercontent.com/Bhartiya-Hacker/L3MON/master/termux_in
     . Press Enter & wait for few seconds
     . l3mon_Signed.apk Payload can be FOUND under HOME/l3mon_output. :D
 
-9. in your browser navigate to `http://127.0.0.1:22533`
 
 ## Notes
 When opening an issue, you **MUST** use the provided templates. Issues without this will not receive support quickly and will be put to the bottom of the figurative pile.

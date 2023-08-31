@@ -57,37 +57,20 @@ curl -s https://raw.githubusercontent.com/Bhartiya-Hacker/L3MON/master/termux_in
   Or
 - git clone https://github.com/Bhartiya-Hacker/L3MON
 - cd L3MON
-- chmod +x install.sh
-- ./install.sh
+- chmod +x termux_install.sh
+- ./termux_install.sh
 
-# Termux Installation: Manual Installation:
-1. Download and Extract the latest release from [HERE](https://t.me/BhartiyaHacker)
-2. Go into the `l3mon` folder and run below commands one by one:
-   - `npm install`
-   - `npm audit fix`
-   - `npm audit`
-3. Install apktool, zipalign & apksigner from [HERE](https://github.com/rendiix/termux-zipalign)
-8. Set a Username & Password
-    1. Start L3MON `l3mon` then Stop L3MON `l3monx`
-    2. Open `maindb.json` in a text editor
-    3. under `admin` 
-        - set the `username` as plain text
-        - set the `password` as a LOWERCASE MD5 hash (Convert your password into md5hash before pasting)
-    4. save the file
-    5. run `l3mon`
-    6. To login: openn your web browser & navigate to `http://127.0.0.1:22533`
+# How to run L3MON in TERMUX:
+    . To start server type 'l3mon'
+    . To stop the server type 'l3monx'
+    . To start payload builder WITHOUT JAVA 8, type 'l3monb', then enter your IP & port. :D
 
 # Termux Payload Builder (No JAVA 8 Required) CHEERS!
     . To run the builder type `l3monb`
     . Enter your Host/IP & PORT
     . Press Enter & wait for few seconds
     . l3mon_Signed.apk Payload can be FOUND under HOME/l3mon_output. :D
-
-
-## Notes
-When opening an issue, you **MUST** use the provided templates. Issues without this will not receive support quickly and will be put to the bottom of the figurative pile.
-
-Please have a look through the current issues, open and closed to see if your issue has been addressed before. If it's java related, it's most definitely been addressed - In short Use Java 1.8.0
+# NOTE: if 'l3mon_output' Folder not found at $HOME dir. then check if 'APKTOOL' properly installed or not by running 'apktool -v'
 
 ## Thanks
 L3MON Builds off and utilizes several opensource software, Without these, L3MON Wouldn't be what it is!

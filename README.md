@@ -49,6 +49,8 @@ A cloud-based remote Android management suite, powered by NodeJS
     - `npm install`
     - `npm audit fix`
     - `npm audit`
+5. Start the server 'pm2 start index.js'
+6. Stop the server 'pm2 stop index.js'
 
 # Termux Installation: Automatic Installation: just copy & paste below command & Grab a Coffe (:
 ````bash

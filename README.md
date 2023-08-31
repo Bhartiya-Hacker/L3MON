@@ -7,7 +7,7 @@ A cloud-based remote Android management suite, powered by NodeJS
 
 <p>Now users no longer need to sign the lemon payload using Apk Editor. If you are a Termux user, you will be able to easily build the payload of Lemon with the help of this repository, as well as use it in Kali Linux and Ubuntu without any errors. If you are a Kali or Ubuntu user, you need to have Java8 Installed on your machine or follow the rootless installation.</p>
 
-<p>The only way to help me is to visit my YouTube channel and subscribe to my channel, leave your comments on our videos, and follow me on GitHub. Looking forward to your cooperation.</p>
+<p>The only way to help me is to visit my <a href="https://www.youtube.com/c/BhartiyaHacker">YouTube</a> channel and subscribe to my channel, leave your comments on our videos, and follow me on GitHub. Looking forward to your cooperation.</p>
 
 
 ## L3MON Features
